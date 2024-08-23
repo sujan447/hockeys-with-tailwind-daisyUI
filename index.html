@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hockeys</title>
+    <!-- tailwind & daisyUI cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- font awesome cdn -->
+    <script src="https://kit.fontawesome.com/ea318d4c59.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- header section -->
+     <header class="container mx-auto">
+        <!-- navbar section -->
+         <nav>
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn  btn-ghost lg:hidden">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-5 w-5"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M4 6h16M4 12h8m-8 6h16" />
+                      </svg>
+                    </div>
+                    <ul
+                      tabindex="0"
+                      class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                      <li class="hover:text-red-700 duration-300 easy-in-out"><a>Home</a></li class="hover:text-red-700 duration-300 easy-in-out">
+                      <li class="hover:text-red-700 duration-300 easy-in-out"><a>About</a></li class="hover:text-red-700 duration-300 easy-in-out">
+                      <li class="hover:text-red-700 duration-300 easy-in-out"><a>Pages</a></li class="hover:text-red-700 duration-300 easy-in-out">
+                      <li class="hover:text-red-700 duration-300 easy-in-out"><a>Blog</a></li class="hover:text-red-700 duration-300 easy-in-out">
+                      <li class="hover:text-red-700 duration-300 easy-in-out"><a>Contact</a></li class="hover:text-red-700 duration-300 easy-in-out">
+                      
+                    </ul>
+                  </div>
+                  <a class="btn btn-ghost text-4xl font-bold">hockey <span class="text-red-600">'</span>s</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1 text-xl font-semibold text-slate-400">
+                    <li class="hover:text-red-700 duration-300 easy-in-out" ><a>Home</a></li class="hover:text-red-700 duration-300 easy-in-out">
+                    <li class="hover:text-red-700 duration-300 easy-in-out" ><a>About</a></li class="hover:text-red-700 duration-300 easy-in-out">
+                    <li class="hover:text-red-700 duration-300 easy-in-out" ><a>Pages</a></li class="hover:text-red-700 duration-300 easy-in-out">
+                    <li class="hover:text-red-700 duration-300 easy-in-out" ><a>Blog</a></li class="hover:text-red-700 duration-300 easy-in-out">
+                    <li class="hover:text-red-700 duration-300 easy-in-out" ><a>Contact</a></li class="hover:text-red-700 duration-300 easy-in-out">
+                  </ul>
+                </div>
+                <div class="navbar-end flex space-x-5">
+                    <div><i class="fa-solid fa-magnifying-glass lg:font-bold lg:text-2xl"></i></div>
+                  <a class="btn btn-error text-white text-2xl font-semibold">Get Ticket</a>
+                </div>
+              </div>
+         </nav>
+
+         <!-- banner section -->
+          <section class="relative py-6">
+            <div class="carousel w-full">
+                <div id="slide1" class="carousel-item relative w-full">
+                  <img
+                    src="./Images/1.png"
+                    class="w-full" />
+                  <div class="absolute  flex space-x-3 bottom-6 left-6 transform justify-between">
+                    <a href="#slide4" class="btn   btn-circle bg-slate-900 text-white ">❮</a>
+                    <a href="#slide2" class="btn  btn-circle bg-slate-900 text-white">❯</a>
+                  </div>
+                </div>
+                <div id="slide2" class="carousel-item relative w-full">
+                  <img
+                    src="https://img.daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.webp"
+                    class="w-full" />
+                    <div class="absolute  flex space-x-3 bottom-6 left-6 transform justify-between">
+                      <a href="#slide1" class="btn   btn-circle bg-slate-900 text-white ">❮</a>
+                      <a href="#slide3" class="btn  btn-circle bg-slate-900 text-white">❯</a>
+                    </div>
+                </div>
+                <div id="slide3" class="carousel-item relative w-full">
+                  <img
+                    src="https://img.daisyui.com/images/stock/photo-1414694762283-acccc27bca85.webp"
+                    class="w-full" />
+                    <div class="absolute  flex space-x-3 bottom-6 left-6 transform justify-between">
+                      <a href="#slide2" class="btn   btn-circle bg-slate-900 text-white ">❮</a>
+                      <a href="#slide4" class="btn  btn-circle bg-slate-900 text-white">❯</a>
+                    </div>
+                </div>
+                <div id="slide4" class="carousel-item relative w-full">
+                  <img
+                    src="https://img.daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.webp"
+                    class="w-full" />
+                    <div class="absolute  flex space-x-3 bottom-6 left-6 transform justify-between">
+                      <a href="#slide3" class="btn   btn-circle bg-slate-900 text-white ">❮</a>
+                      <a href="#slide1" class="btn  btn-circle bg-slate-900 text-white">❯</a>
+                    </div>
+                </div>
+              </div>
+              <div class="bg-slate-950 text-white rounded-lg lg:w-1/3 px-8 py-8 space-y-4 lg:absolute bottom-12 right-12 mt-6">
+                <h4 class="text-2xl font-bold ">Meet all the heroes from the field</h4>
+                <p>Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+              </div>
+          </section>
+     </header>
+
+     <!-- main section -->
+      <main class="container mx-auto">
+        <!-- static section -->
+         <section class="mt-24 ">
+          <div class="border-y-4 border-dashed flex flex-col items-center justify-center text-center py-6 mb-12">
+            <h3 class="text-3xl font-bold mb-6">Professional Hockeys Club</h3>
+            <p class="opacity-80 w-1/2">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 ">
+            <div class=" flex flex-col items-center justify-center text-center space-y-4">
+              <div class="relative">
+                <div class="radial-progress  z-50 text-red-400" style="--value:87;" role="progressbar"><span class="text-black text-2xl font-bold rotate-0">87%</span></div>
+                <div class="absolute top-0 left-0 -rotate-90 radial-progress text-slate-300" style="--value:70;" role="progressbar"></div>
+              </div>
+              <h4 class="text-2xl font-semibold">Prayer Facility</h4>
+              <p class="opacity-80">Amet consectetur. Condimentum dignissim adipiscing .</p>
+            </div>
+            <div class=" flex flex-col items-center justify-center text-center space-y-4">
+              <div class="relative">
+                <div class="radial-progress  z-50 text-green-400" style="--value:95;" role="progressbar"><span class="text-black text-2xl font-bold rotate-0">95%</span></div>
+                <div class="absolute top-0 left-0 -rotate-90 radial-progress text-slate-300" style="--value:70;" role="progressbar"></div>
+              </div>
+              <h4 class="text-2xl font-semibold">Experienced Coach</h4>
+              <p class="opacity-80">Amet consectetur. Condimentum dignissim adipiscing .</p>
+            </div>
+            <div class=" flex flex-col items-center justify-center text-center space-y-4">
+              <div class="relative">
+                <div class="radial-progress  z-50 text-yellow-400" style="--value:90;" role="progressbar"><span class="text-black text-2xl font-bold rotate-0">90%</span></div>
+                <div class="absolute top-0 left-0 -rotate-90 radial-progress text-slate-300" style="--value:70;" role="progressbar"></div>
+              </div>
+              <h4 class="text-2xl font-semibold">Senior Player</h4>
+              <p class="opacity-80">Amet consectetur. Condimentum dignissim adipiscing .</p>
+            </div>
+            <div class=" flex flex-col items-center justify-center text-center space-y-4">
+              <div class="relative">
+                <div class="radial-progress  z-50 text-blue-400" style="--value:80;" role="progressbar"><span class="text-black text-2xl font-bold rotate-0">80%</span></div>
+                <div class="absolute top-0 left-0 -rotate-90 radial-progress text-slate-300" style="--value:70;" role="progressbar"></div>
+              </div>
+              <h4 class="text-2xl font-semibold">Training Ground</h4>
+              <p class="opacity-80">Amet consectetur. Condimentum dignissim adipiscing .</p>
+            </div>
+          </div>
+         </section>
+      </main>
+
+      <!-- footer section -->
+       <footer></footer>
+</body>
+</html>
